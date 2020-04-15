@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04AA38852446B5AD00873899 /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA38842446B5AD00873899 /* WordTableViewCell.swift */; };
+		04AA38892446B8F700873899 /* WordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA38882446B8F700873899 /* WordTableViewController.swift */; };
 		04C1AB20243D41800059DB07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1AB1F243D41800059DB07 /* AppDelegate.swift */; };
 		04C1AB22243D41800059DB07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1AB21243D41800059DB07 /* SceneDelegate.swift */; };
 		04C1AB24243D41800059DB07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1AB23243D41800059DB07 /* ViewController.swift */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04AA38842446B5AD00873899 /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
+		04AA38882446B8F700873899 /* WordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewController.swift; sourceTree = "<group>"; };
+		04AA388C244751B600873899 /* Word Talk Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Word Talk Test.entitlements"; sourceTree = "<group>"; };
 		04C1AB1C243D41800059DB07 /* Word Talk Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word Talk Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C1AB1F243D41800059DB07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C1AB21243D41800059DB07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +88,7 @@
 				04C1AB35243D41810059DB07 /* Word Talk TestTests */,
 				04C1AB40243D41810059DB07 /* Word Talk TestUITests */,
 				04C1AB1D243D41800059DB07 /* Products */,
+				93B8BD30D915286838F07BF1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +105,13 @@
 		04C1AB1E243D41800059DB07 /* Word Talk Test */ = {
 			isa = PBXGroup;
 			children = (
+				04AA388C244751B600873899 /* Word Talk Test.entitlements */,
 				04C1AB1F243D41800059DB07 /* AppDelegate.swift */,
 				04C1AB21243D41800059DB07 /* SceneDelegate.swift */,
 				04C1AB23243D41800059DB07 /* ViewController.swift */,
 				04C1AB25243D41800059DB07 /* Main.storyboard */,
+				04AA38842446B5AD00873899 /* WordTableViewCell.swift */,
+				04AA38882446B8F700873899 /* WordTableViewController.swift */,
 				04C1AB28243D41800059DB07 /* Assets.xcassets */,
 				04C1AB2A243D41800059DB07 /* LaunchScreen.storyboard */,
 				04C1AB2D243D41800059DB07 /* Info.plist */,
@@ -126,6 +135,13 @@
 				04C1AB43243D41810059DB07 /* Info.plist */,
 			);
 			path = "Word Talk TestUITests";
+			sourceTree = "<group>";
+		};
+		93B8BD30D915286838F07BF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04C1AB24243D41800059DB07 /* ViewController.swift in Sources */,
+				04AA38892446B8F700873899 /* WordTableViewController.swift in Sources */,
 				04C1AB20243D41800059DB07 /* AppDelegate.swift in Sources */,
 				04C1AB22243D41800059DB07 /* SceneDelegate.swift in Sources */,
+				04AA38852446B5AD00873899 /* WordTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,14 +452,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Word Talk Test/Word Talk Test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7LEW9724V;
 				INFOPLIST_FILE = "Word Talk Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vaughn0523.Word-Talk-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,14 +473,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Word Talk Test/Word Talk Test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7LEW9724V;
 				INFOPLIST_FILE = "Word Talk Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vaughn0523.Word-Talk-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
